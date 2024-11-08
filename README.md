@@ -1,4 +1,6 @@
 # HW7 Lab8
+
+```
 library(ggplot2)
 library(tidyverse)
 library(haven)
@@ -66,10 +68,11 @@ summary(trad_data$POVERTY)
 
 ols_out3 <- lm(he_more_than_5yrs_than_her ~ EDUC + h_educ + POVERTY, data = trad_data)
 summary(ols_out3)
-
+```
 
 
 # 1
+```
 trad_data_summary <- trad_data %>%
   group_by(he_more_than_5yrs_than_her, FAMSIZE) %>%
   summarise(count = n(), .groups = "drop")
@@ -93,8 +96,11 @@ print(a2)
 
 #Focusing on factors affecting whether a male partner is more than 5 years older than a female partner within couples from the __South Atlantic Division__
 #The distribution of family sizes based on the age gap helps to see that if couple has more than 5 years age gap tend to have less children than those with less age gap.
+```
 
 # 2
+
+```
 load(tidyv)
 trad_data2 <- acs2021_couples %>% filter( (SEX == "Female") & (h_sex == "Male") & !is.na(HHINCOME))
 
@@ -136,6 +142,7 @@ print(a3)
 or less than 5 years. I can observe that the most income is concentrated in couples where head of the household(male) 
 is not more than 5 years older and income is in range either 100k-150k or 200k-250k. Even though I can see also the same
 income trend is common to a couples where head of the household is older than 5 years
+```
 
 # Hypothesis testing:
 H0:Household income has no effect on the likelihood of the male partner being older by more than 5 years.
