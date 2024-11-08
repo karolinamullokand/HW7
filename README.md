@@ -145,10 +145,15 @@ income trend is common to a couples where head of the household is older than 5 
 ```
 
 # Hypothesis testing:
+
 H0:Household income has no effect on the likelihood of the male partner being older by more than 5 years.
 HA:Household income does have an effect on the age gap.
+
+```
 ols_out <- lm(he_more_than_5yrs_than_her ~ income_midpoint, data = trad_data2_summary)
 summary(ols_out)
+```
+
 #Results:
 Significance (p = 0.0115): This result is statistically significant, suggesting that households in the highest income 
 group are indeed less likely to have a male partner significantly older than the female partner.
