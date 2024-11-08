@@ -147,6 +147,7 @@ income trend is common to a couples where head of the household is older than 5 
 # Hypothesis testing:
 
 H0:Household income has no effect on the likelihood of the male partner being older by more than 5 years.
+
 HA:Household income does have an effect on the age gap.
 
 ```
