@@ -156,5 +156,6 @@ summary(ols_out)
 ```
 
 #Results:
+
 Significance (p = 0.0115): This result is statistically significant, suggesting that households in the highest income 
 group are indeed less likely to have a male partner significantly older than the female partner.
